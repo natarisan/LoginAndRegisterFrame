@@ -14,7 +14,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/tasks" element={<App />} />
+          <Route path="/deposit" element={<App />} />
         </Routes>
       </BrowserRouter>
     </Provider>
