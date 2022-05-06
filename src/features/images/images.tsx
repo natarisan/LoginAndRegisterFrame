@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from "./App.module.css";
+import styles from "./images.module.css";
 import { FaSignInAlt } from "react-icons/fa";
 
-function App() {
+function Images() {
   const Logout = () => {
     localStorage.removeItem("localJWT");
     localStorage.removeItem("localRJWT");
@@ -15,8 +15,9 @@ function App() {
           <FaSignInAlt />
         </button>
       </div>
+      <div className={styles.appDetails}></div>
     </div>
   );
 }
 
-export default App;
+export default Images;

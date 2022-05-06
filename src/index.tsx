@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Login from './features/login/login';
+import Images from './features/images/images';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/deposit" element={<App />} />
+          <Route path="/images" element={<Images />} />
         </Routes>
       </BrowserRouter>
     </Provider>
