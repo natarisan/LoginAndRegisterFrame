@@ -24,6 +24,10 @@ function App() {
     await dispatch(fetchAsyncDeposit(transactionRequest))
   }
 
+  const createAccount = async() => {
+    await dispatch(newAccount(transactionRequest));
+  }
+
   const Logout = () => {
     localStorage.removeItem("localJWT");
     localStorage.removeItem("localRJWT");
@@ -64,14 +68,16 @@ function App() {
           required
         />
         <span>transaction_type</span>
+        <div>
+        <label>withdrawal</label>
         <input
           type="checkbox"
-          className={styles.inputLog}
           name="transaction_type"
           placeholder=""
           onClick={() => dispatch(setTtype("withdrawal"))}
           required
         />
+        </div>
         <div className={styles.switch}>
           <Button
             variant="contained"
@@ -80,6 +86,31 @@ function App() {
             >
             SHOW
           </Button>
+        </div>
+        <div className={styles.switch}>
+          <Button
+            variant="contained"
+            color="default"
+            onClick={createAccount}
+            >
+            アカウント作成
+          </Button>
+          <label>saving</label>
+          <input
+          type="radio"
+          name="account_type"
+          placeholder=""
+          onClick={() => dispatch(setAtype("saving"))}
+          required
+          />
+          <label>checking</label>
+          <input
+          type="radio"
+          name="account_type"
+          placeholder=""
+          onClick={() => dispatch(setAtype("checking"))}
+          required
+          />
         </div>
       </div>
     </div>
