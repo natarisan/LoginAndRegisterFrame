@@ -54,3 +54,21 @@
   background: #444;
   border-radius: 10px;
 }
+
+.inputLog {
+  width: 85%;
+  margin: 20px;
+  font-family: "Comic Neue", cursive;
+  background-color: #555555;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #333333;
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+.switch {
+  margin: 20px;
+  display: block;
+  text-align: center;
+}
