@@ -42,7 +42,7 @@ function App() {
         <h2>預金残高: {deposit}</h2>
         <span>customer_id</span>
         <input
-          type="number"
+          type="text"
           className={styles.inputLog}
           name="customer_id"
           placeholder=""
@@ -51,7 +51,7 @@ function App() {
         />
         <span>account_id</span>
         <input
-          type="number"
+          type="text"
           className={styles.inputLog}
           name="account_id"
           placeholder=""
@@ -60,7 +60,7 @@ function App() {
         />
         <span>amount</span>
         <input
-          type="number"
+          type="text"
           className={styles.inputLog}
           name="amount"
           placeholder=""
