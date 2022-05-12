@@ -90,7 +90,7 @@ function App() {
         <div className={styles.switch}>
           <Button
             variant="contained"
-            color="default"
+            color="primary"
             onClick={createAccount}
             >
             アカウント作成
